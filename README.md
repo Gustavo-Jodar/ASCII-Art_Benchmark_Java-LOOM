@@ -18,10 +18,10 @@ This benchmark aims to measure and compare:
 3. **Virtual Threads**: Utilizes virtual threads from Project Loom for lightweight, scalable concurrency.
 
 ## Benchmark Parameters
-- **Images Processed**: 100 high-resolution images per test.
-- **Concurrency Levels**: Various thread counts (1, 2, 4, 8, 16, 32, 64, 128, 256).
+- **Images Processed**: 100 (640 x 418) images per test.
+- **Concurrency Levels**: Various thread counts (1, 2, 4, 5, 6, 7, 8, 16, 32).
 - **Metrics Collected**:
-  - **Average Time per Image** (nanoseconds, converted to milliseconds for reporting)
+  - **Average Time per Image** (converted to milliseconds for reporting)
   - **Throughput** (images processed per second)
 
 ## Results
