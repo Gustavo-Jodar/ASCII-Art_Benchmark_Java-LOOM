@@ -1,11 +1,7 @@
 # ASCII-Art_Benchmark_Java-LOOM
 
-This small project benchmarks the performance of image-to-ASCII conversion in Java, comparing three threading models:
-- **No Thread** (single-threaded execution)
-- **Normal Threads** (traditional thread pools)
-- **Virtual Threads** introduced with **Project Loom**
-
-The image processing portion of an existing project was re-implemented to focus on concurrency and performance efficiency, especially in handling CPU-bound tasks.
+This small testing project benchmarks the performance of image-to-ASCII conversion in Java, comparing three threading models:
+It uses an image processing portion of an existing project, https://github.com/Gustavo-Jodar/ASCII-Art, which was re-implemented to focus on the comparison between traditional Java Threads and the new VirtualThread from Project Loom.
 
 ## Project Overview
 This benchmark aims to measure and compare:
@@ -15,7 +11,7 @@ This benchmark aims to measure and compare:
 ## Threading Models Tested
 1. **No Thread**: Runs the conversion on a single thread (baseline).
 2. **Normal Threads**: Uses Java’s standard thread pools to parallelize processing.
-3. **Virtual Threads**: Utilizes virtual threads from Project Loom for lightweight, scalable concurrency.
+3. **Virtual Threads**: Utilizes virtual threads from Project Loom (lightweight, scalable concurrency).
 
 ## Benchmark Parameters
 - **Images Processed**: 100 (640 x 418) images per test.
@@ -42,6 +38,10 @@ This benchmark aims to measure and compare:
 
 3. **Run the Benchmark**:
    Run the main application to initiate the benchmark and view results.
+
+For comparison, the computer used to perform the tests has the following settings:
+CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz   1.80 GHz
+RAM: 8,00 GB (7,89 GB usable)
    
 ## Repository
 [GitHub Repository](https://github.com/Gustavo-Jodar/ASCII-Art_Benchmark_Java-LOOM)
